@@ -1,0 +1,170 @@
+@import "./variant.scss";
+@import "bootstrapUtil.scss";
+html {
+  zoom: -3 !important;
+  -moz-transform: scale(-3) !important;
+  -moz-transform-origin: 0 0;
+}
+.text-primary {
+  color: $primary;
+}
+.bg-primary {
+  background-color: $primary;
+}
+.border-primary {
+  border-color: $primary;
+}
+.profilecard {
+  background: #f4f5f7;
+  padding: 10px 17px;
+  border-radius: 4px;
+  .name {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  .role {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: darkgray;
+  }
+}
+
+.pt-sect {
+  padding-top: 6.5rem;
+}
+.f-10 {
+  font-size: 10px !important;
+}
+.sidebar-sect {
+  z-index: 9999;
+  position: fixed;
+  background: white;
+  width: 412px;
+  right: -412px;
+  transition: 0.6s all;
+  padding: 26px 36px;
+  height: 100vh;
+  box-shadow: 1px 0px 10px 2px #00000021;
+  .closeBar {
+    border: 2px solid gainsboro;
+    padding: 4px 6px;
+    width: 21px;
+    border-radius: 25px;
+    font-size: 11px;
+  }
+}
+.showBar {
+  right: 0;
+}
+.sidetimeline {
+  border-left: 1px solid gainsboro;
+  padding-left: 15px;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 13px;
+    background-color: gainsboro;
+    left: -5px;
+  }
+}
+.listbtt {
+  border-bottom: 1px solid gainsboro;
+  padding: 14px 0px;
+}
+
+.trendChart {
+  svg {
+    stroke-width: 8px;
+  }
+}
+
+.formScroll {
+  max-height: 88vh;
+  overflow-y: scroll;
+  padding-bottom: 58px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.piechartheight {
+  width: 100% !important;
+  height: 300px !important;
+}
+.con-vs-dropdown--menu {
+  width: 160px !important;
+}
+.vs-tabs--li button.vs-tabs--btn {
+  outline: 0 !important;
+}
+.trackmap .mgl-map-wrapper .mapboxgl-map {
+  border-radius: 13px;
+  // .vs-tabs-primary .con-ul-tabs .activeChild button,
+  // .vs-tabs-primary .con-ul-tabs button:not(:disabled):hover {
+  //   color: $primary;
+  // }
+}
+.miniheading {
+  font-size: 14px;
+  color: darkgray;
+  text-transform: uppercase;
+}
+.d-inlineblock {
+  display: inline-block;
+}
+.siteFormIcon {
+  div {
+    .input-span-placeholder {
+      text-align: left !important;
+      padding-top: 9px !important;
+    }
+    .vs-icon {
+      padding-top: 2px !important;
+      padding-left: 4px !important;
+    }
+  }
+}
+.loadingDiv {
+  padding-top: 110px;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+}
+
+.line {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  border-radius: 15px;
+  background-color: $primary;
+}
+
+.load-3 .line:nth-last-child(1) {
+  animation: loadingC 0.6s 0.1s linear infinite;
+}
+.load-3 .line:nth-last-child(2) {
+  animation: loadingC 0.6s 0.2s linear infinite;
+}
+.load-3 .line:nth-last-child(3) {
+  animation: loadingC 0.6s 0.3s linear infinite;
+}
+
+@keyframes loadingC {
+  0 {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.basemap {
+  width: 100%;
+  height: 80vh;
+}
